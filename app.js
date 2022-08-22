@@ -18,6 +18,10 @@ app.get('/',function(req, res){
   res.render('home',{startingContent : homeStartingContent,post_value: posts});
 });
 
+app.post('/',function(req,res){
+  res.render('compose');
+});
+
 app.get('/about',function(req,res){
   res.render('about',{aboutcontent:aboutContent});
 });

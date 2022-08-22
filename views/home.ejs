@@ -1,6 +1,10 @@
     <%- include('partials/header') %>
     <h1>Home</h1>
     <p><%= startingContent %></p>
+    <form action="/" method="post">
+        <button type="submit" name="button_compose" class="btn btn-primary mb-3">Compose </button>
+    </form>
+    
 
     <% post_value.forEach(function(value){ %>
     <h1><%- value.title_name %></h1> 
